@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			.cont{
+				width:750px;
+				height: 400px;
+				background:red;
+			}
+			.img{
+				width: 100%;
+				height: auto;
+			}
+		</style>
+</head>
+<body>
+	<div class='cont'>
+		<ul id='cont_ul'>
+			<li>
+				<img src="./1.jpg" alt="" srcset="">
+			</li>
+			<li>
+				<img src="./2.jpg" alt="" srcset="">
+			</li>
+			<li>
+				<img src="./3.jpg" alt="" srcset="">
+			</li>
+			<li>
+				<img src="./4.jpg" alt="">
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
+<script src="/app.js"></script>
+<script>
+	let id = document.getElementById('cont_ul') 
+	new lunbo({
+		id,
+		time:1
+	})
+</script>
